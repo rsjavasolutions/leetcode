@@ -2,7 +2,7 @@ package org.example.addtwonumbers
 
 import spock.lang.Specification
 
-class SolutionSpec extends Specification {
+class ValidAnagramSpec extends Specification {
 
     def solution = new Solution();
 
