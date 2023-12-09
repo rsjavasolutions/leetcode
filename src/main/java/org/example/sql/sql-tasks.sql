@@ -17,3 +17,10 @@ SELECT DISTINCT w1.Id
 FROM Weather w1,Weather w2
 WHERE w1.Temperature > w2.Temperature
 AND DATEDIFF(w1.Recorddate, w2.Recorddate) = 1
+
+________________________________
+584. Find Customer Referee
+
+SELECT name
+FROM Customer
+WHERE referee_id IS NULL OR referee_id <> 2
