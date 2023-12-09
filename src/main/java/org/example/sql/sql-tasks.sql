@@ -36,5 +36,10 @@ INNER JOIN
     Product ON Sales.product_id = Product.product_id
 
 ________________________________
+627. Swap Salary
 
-
+UPDATE Salary
+SET sex = CASE
+    WHEN sex = 'm' THEN 'f'
+    WHEN sex = 'f' THEN 'm'
+END;
