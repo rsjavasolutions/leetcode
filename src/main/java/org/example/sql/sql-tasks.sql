@@ -43,3 +43,14 @@ SET sex = CASE
     WHEN sex = 'm' THEN 'f'
     WHEN sex = 'f' THEN 'm'
 END;
+
+________________________________
+178. Rank Scores
+
+SELECT score,
+    dense_rank() OVER (
+        ORDER BY score DESC
+        ) AS 'rank'
+FROM Scores
+ORDER BY score DESC
+
